@@ -4,7 +4,7 @@ This is a small project I completed in my own time, which involved building real
 
 ## API
 
-The API that I used for this project ([TfL Unified API](https://api.tfl.gov.uk/) can be found here. It provides real-time and static data about London's public transport network, including: 
+The API that I used for this project ([TfL Unified API](https://api.tfl.gov.uk/)) can be found here. It provides real-time and static data about London's public transport network, including: 
 
 - Arrivals at stops and stations (buses, underground, overground, etc.)
 - Line status (delays, closures, service updates)
@@ -14,6 +14,8 @@ Within the API, there is also other useful static data which provides informatio
 
 ## Scope
 
-For this task, I made the decision to focus exclusively on the Central line of the London Underground - instead of importing data from every line. This was because limiting the data to a single line would allow for clearer analysis and more meaningful visualizations, without being overwhelmed by data from other lines. It also improves performance of the ETL pipeline and subsequent database operations, ensuring compliance with TfL API rate limits, and keeps the project manageable and easy to interpret. If I were to expand the project to multiple lines without comprising the pipeline's performance, I would consider techniques such as parallelization - specifically when making HTTP requests to API to speed up data extraction while respecting API rate limits. I would implement batch requests (fetch arrivals for a subset of stops or lines at a time, rather than all at once, to avoid overwhelming the API and my pipeline).
+For this task, I made the decision to focus exclusively on the Central line of the London Underground - instead of importing data from every line. This was because limiting the data to a single line would allow for clearer analysis and more meaningful visualizations, without being overwhelmed by data from other lines. It also improves performance of the ETL pipeline and subsequent database operations, ensuring compliance with TfL API rate limits, and keeps the project manageable and easy to interpret. 
+
+If I were to expand the project to multiple lines without comprising the pipeline's performance, I would consider techniques such as parallelization - specifically when making HTTP requests to API to speed up data extraction while respecting API rate limits. I would implement batch requests (fetch arrivals for a subset of stops or lines at a time, rather than all at once, to avoid overwhelming the API and my pipeline).
 
 
