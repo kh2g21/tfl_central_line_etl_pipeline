@@ -5,7 +5,7 @@ import time
 from sqlalchemy import create_engine, MetaData
 from sqlalchemy.dialects.postgresql import insert
 
-DB_URI = "postgresql+psycopg2://postgres:bdjlmttla123@postgres:5432/postgres"
+DB_URI = "postgresql+psycopg2://postgres:************@postgres:5432/postgres"
 
 def get_all_stops(lines):
     all_stops = []
