@@ -4,7 +4,7 @@ services:
     image: postgres:15
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: bdjlmttla123
+      POSTGRES_PASSWORD: ************
       POSTGRES_DB: postgres
     ports:
       - "5433:5432"
@@ -17,7 +17,7 @@ services:
       - postgres
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:bdjlmttla123@postgres:5432/postgres
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:************@postgres:5432/postgres
       AIRFLOW__CORE__FERNET_KEY: '43cWXa4VAl0q965UxRiPkVGzAwWbtvHj9JUddf9mMLY='
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     volumes:
@@ -30,7 +30,7 @@ services:
     command: >
       -c "
         airflow db upgrade &&
-        airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com || true &&
+        airflow users create --username ***** --password ***** --firstname ***** --lastname **** --role Admin --email admin@example.com || true &&
         airflow scheduler &
         airflow webserver
       "
