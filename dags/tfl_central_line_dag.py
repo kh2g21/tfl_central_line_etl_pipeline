@@ -11,7 +11,7 @@ from sqlalchemy.dialects.postgresql import insert
 import time
 
 # --- CONFIG ---
-DB_URI = "postgresql+psycopg2://postgres:bdjlmttla123@postgres:5432/postgres"
+DB_URI = "postgresql+psycopg2://postgres:************@postgres:5432/postgres"
 TARGET_LINES = ["central"]  # list of lines to fetch
 
 default_args = {
