@@ -153,7 +153,8 @@ The headline metrics show that the average passenger wait time on the Central Li
 
 Below is an image of the final dashboard.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/22b04f27-642d-4d64-bafe-0bfc7ab0207f" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/347fd9e0-e2b2-4803-b620-8d3aab9a30c8" />
+
 
 ## Considerations for Future Work
 
