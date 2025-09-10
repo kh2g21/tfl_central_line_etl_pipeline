@@ -174,5 +174,5 @@ If I were to perform time-series based analysis, I would enhance the visualizati
 
 **PostgreSQL database**:
 
-Set up a PostgreSQL database. The code assumes a connection to a database at postgres, with port 5432 with a user postgres and a password (replace ************ in DB_URI with your actual password). You will need to create a database named postgres (or update DB_URI to match your database name), and ensure the PostgreSQL server is running and accessible (e.g., locally or via a container like Docker).
+Set up a PostgreSQL database. The code assumes a connection to a database at postgres, with port 5432 with a user postgres and a password (replace ************ in DB_URI with your actual password). You will need to create a database named postgres (or update DB_URI to match your database name), and ensure the PostgreSQL server is running and accessible (e.g., locally or via a container like Docker). Also, be sure to update `docker-compose.yaml` file with your correct PostgreSQL login credentials. 
 
