@@ -169,29 +169,10 @@ If I were to perform time-series based analysis, I would enhance the visualizati
 
 - Ensure you have Python 3.6 or higher installed.
 - Install required libraries using pip:
+  
 `pip install requests pandas sqlalchemy psycopg2-binary`
 
 **PostgreSQL database**:
 
 Set up a PostgreSQL database. The code assumes a connection to a database at postgres, with port 5432 with a user postgres and a password (replace ************ in DB_URI with your actual password). You will need to create a database named postgres (or update DB_URI to match your database name), and ensure the PostgreSQL server is running and accessible (e.g., locally or via a container like Docker).
 
-The code assumes a table arrival_fact exists or will be created dynamically. Define this table in your database or modify the load_data function to create it with the appropriate schema. The schema looks like:
-
-`CREATE TABLE arrival_fact (
-    arrival_id TEXT PRIMARY KEY,
-    route_id TEXT,
-    route_name TEXT,
-    stop_id TEXT,
-    stop_name TEXT,
-    expected_arrival TIMESTAMP,
-    time_to_station INTEGER,
-    direction TEXT,
-    platform_name TEXT,
-    vehicle_id TEXT,
-    lat FLOAT,
-    lon FLOAT,
-    minutes_to_arrival FLOAT,
-    hour INTEGER,
-    weekday INTEGER,
-    ingested_at TIMESTAMP
-);`
