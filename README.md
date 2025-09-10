@@ -1,6 +1,6 @@
 ## Overview
 
-This is a small project I completed in my own time, which involved building real-time data pipeline dashboard for London Underground’s Central Line arrivals data. The aim was to extract live arrival predictions from the Transport for London (TfL) Unified API, and then transform & load the data into a PostgreSQL warehouse using Airflow; before analysing & visualising key performance metrics in Tableau.
+This is a small project I completed in my own time, which involved building real-time data pipeline dashboard for London Underground’s Central Line arrivals data in a given day (08/09/2025). The aim was to extract live arrival predictions from the Transport for London (TfL) Unified API, and then transform & load the data into a PostgreSQL warehouse using Airflow; before analysing & visualising key performance metrics in Tableau.
 
 ## API
 
